@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLE Firmware Flasher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BLE Firmware Flasher</h1>
+        <button id="connect-button">Connect to BLE Device</button>
+        <div id="device-info" class="hidden">
+            <p>Connected to: <span id="device-name"></span></p>
+        </div>
+        <div id="flash-container" class="hidden">
+            <input type="file" id="firmware-file">
+            <button id="flash-button">Flash Firmware</button>
+        </div>
+        <div id="status-container">
+            <h2>Status</h2>
+            <pre id="status-messages"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

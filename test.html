@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bluetooth Test</title>
+</head>
+<body>
+    <h1>Web Bluetooth API Test</h1>
+    <p>Open the developer console to see the results.</p>
+    <script>
+        console.log('--- Web Bluetooth API Test ---');
+        if (navigator.bluetooth) {
+            console.log('navigator.bluetooth is available.');
+            // You can add more tests here, for example, trying to request a device
+            // on a button click.
+            document.write('<p>Web Bluetooth API is available!</p>');
+        } else {
+            console.error('navigator.bluetooth is NOT available.');
+            document.write('<p>Web Bluetooth API is NOT available.</p>');
+        }
+    </script>
+</body>
+</html>
